@@ -773,7 +773,6 @@ body::after {
   -ms-flex-direction: column;
   flex-direction: column;
   position: relative;
-  z-index: 200;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
