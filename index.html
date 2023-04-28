@@ -5,7 +5,7 @@
 	<title>Главная</title>
 	<meta charset="UTF-8" />
 	<meta name="format-detection" content="telephone=no" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20230428113755" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20230428115154" />
 	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
@@ -157,7 +157,9 @@
 				<form class="contact__form form-contact">
 					<input type="text" placeholder="Имя" class="form-contact__input" />
 					<input type="text" placeholder="Номер телефона" class="form-contact__input" />
-					<button class="form-contact__button">Заказать звонок</button>
+					<button class="form-contact__button" data-popup="#popup-contact">
+						Заказать звонок
+					</button>
 				</form>
 			</div>
 		</div>
@@ -568,17 +570,18 @@
 		</footer>
 
 	</div>
-	<!-- <div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-				Text
+	<div id="popup-contact" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">×</button>
+				<div class="popup__text">
+					<p>Спасибо за Вашу заявку!</p>
+					<p>Ожидайте звонка</p>
+				</div>
 			</div>
 		</div>
 	</div>
-</div> -->
-	<script src="js/app.min.js?_v=20230428113755"></script>
+	<script src="js/app.min.js?_v=20230428115154"></script>
 </body>
 
 </html>
